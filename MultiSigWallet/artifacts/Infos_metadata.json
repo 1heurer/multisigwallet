@@ -1,0 +1,196 @@
+{
+	"compiler": {
+		"version": "0.7.5+commit.eb77ed08"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "depositedTo",
+						"type": "address"
+					}
+				],
+				"name": "depositDone",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "approveTransfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "completeTransfer",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "deposit",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getOwners",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_amount",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "_recipient",
+						"type": "address"
+					}
+				],
+				"name": "requestTransfer",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "secondOwner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "thirdOwner",
+						"type": "address"
+					}
+				],
+				"name": "setOwners",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "amount",
+						"type": "uint256"
+					}
+				],
+				"name": "withdraw",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"infos.sol": "Infos"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"government.sol": {
+			"keccak256": "0x0cf7b06651229c215563c75a9f32e75e8cda4e0c2fe61cbbc8ef4aec8c9fabf1",
+			"urls": [
+				"bzz-raw://8d6bf1da2ae7f4948f14f5ffe00be359d09f1c7697a2c750022527241a50ce42",
+				"dweb:/ipfs/QmWyFjou5hCiq1jtXsK3bgTycwqQ6XB42DUVEbQ37DiVVv"
+			]
+		},
+		"infos.sol": {
+			"keccak256": "0x219dd8d64da5e89d3d9e50dd4ebe79c047e6f9953fc601fb33c36f7d58dbd0ab",
+			"urls": [
+				"bzz-raw://ac9907a6edc6be04d59d8c7d2436808cfb23bb14a19d84a8c2a729fab469a343",
+				"dweb:/ipfs/QmfSaMwygn1t4uA7eHAtY3xtgVJQc4LKW5Cumsy9tCaLYw"
+			]
+		},
+		"ownable.sol": {
+			"keccak256": "0x82aacca371b7393e6142da7dd2c570cf74b5507db9edd251a8872e438a0e1b0e",
+			"urls": [
+				"bzz-raw://a7afd3032609966ef13afca3d378b3a58c9248ce6f56da2901fa5f7c3aa00acf",
+				"dweb:/ipfs/QmPn5ayfhFfL2FWmNuSE23Kybs1wGjCj7yBZxY3QeCUptZ"
+			]
+		},
+		"wallet.sol": {
+			"keccak256": "0x1c2a59c27fa6b6de19d0be2e12c179a84af0e73672930afde676cd43f1dd62a5",
+			"urls": [
+				"bzz-raw://23cafe1c118899a1a7d73e4cc1728322f148d644c4c095249526181f55766a69",
+				"dweb:/ipfs/QmSyj4xaMrd3oE8WiyjRxHePS6n3HGiQ6u9LyLhe9Egsi1"
+			]
+		}
+	},
+	"version": 1
+}
